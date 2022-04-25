@@ -1,0 +1,57 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--header_intro: hsl(217, 28%, 15%);
+	--main: hsl(218, 28%, 13%);
+	--quotes: hsl(219, 30%, 18%);
+	--footer: hsl(216, 53%, 9%);
+	--cta_cyan: hsl(176, 68%, 64%);
+	--cta_blue: hsl(198, 60%, 50%);
+	--error: hsl(0, 100%, 63%);
+}
+
+/* == FEM default style sheet == */
+.attribution {
+	font-size: 12px;
+	text-align: center;
+	/* CUSTOM */
+	margin: 5px auto;
+	padding: 5px 10px;
+	width: fit-content;
+	background-color: cadetblue;
+	border-radius: 8px;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+/* == FEM default style sheet == */
+
+/* == FONT AWESOME == */
+.social a {
+	position: relative;
+	border-radius: 50%;
+	background-color: white;
+	padding: 1px;
+}
+.inCircle {
+	border-radius: 50%;
+	background-color: var(--footer);
+	padding: 1.5rem;
+	font-size: 1.5rem;
+}
+.icon {
+	color: white;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+.social a:hover {
+	background-color: var(--cta_cyan);
+}
+.social a:hover .icon {
+	color: var(--cta_cyan);
+}
+/* == FONT AWESOME == */

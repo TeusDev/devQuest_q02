@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+/*
+
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+
+*/
+
+/* PRE-SETTING'S */
+html {
+	max-width: 1440px;
+	margin: auto;
+	font-size: 62.5%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.heading {
+	font-family: 'Raleway', sans-serif;
+}
+
+button {
+	color: white;
+	border: none;
+	font-weight: 700;
+	cursor: pointer;
+	background: linear-gradient(
+		90deg,
+		rgba(101, 226, 217, 1) 0%,
+		rgba(51, 158, 204, 1) 100%
+	);
+	border-radius: 50px;
+	user-select: none;
+}
+button:hover {
+	background: hsl(176, 68%, 64%);
+}
+/* ============= */
+
+/* STYLE HEADER */
+.header {
+	background-color: var(--header_intro);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px 55px;
+}
+.header .nav {
+	display: flex;
+	font-size: 1.5rem;
+	gap: 5px;
+}
+.header .nav li {
+	list-style: none;
+	width: 100px;
+	text-align: center;
+}
+.header .nav li a {
+	color: white;
+	font-weight: 400;
+
+	/* PRE-HOVER */
+	letter-spacing: 0.1em;
+	text-decoration: none;
+	transition: 0.3s;
+}
+.header .nav li a:hover {
+	/* HOVER VFX */
+	text-decoration: underline;
+	letter-spacing: 0.2em;
+	font-weight: 700;
+}
+
+/* STYLE FRONT */
+.content {
+	background-color: var(--header_intro);
+}
+.content .intro {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: url(../images/bg-curvy-desktop.svg) center bottom no-repeat;
+	padding-bottom: 190px;
+	color: white;
+	text-align: center;
+	letter-spacing: 1px;
+}
+.content .intro h1 {
+	font-size: 4rem;
+	margin: 50px 0;
+	max-width: 800px;
+}
+.content .intro p {
+	font-size: 2.025rem;
+	margin-bottom: 30px;
+	max-width: 700px;
+}
+.content .intro button {
+	font-size: 1.75rem;
+	padding: 20px 100px;
+}
+
+/* STYLE PROS */
+.content .advantages {
+	background-color: var(--main);
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(0, 400px));
+	gap: 100px;
+	padding: 0 200px 190px;
+	justify-content: center;
+}
+.content .advantages > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+	text-align: center;
+}
+.content .advantages div > h2 {
+	margin: 30px 0 10px;
+	font-size: 2rem;
+	font-family: 'Raleway', sans-serif;
+}
+.content .advantages div > p {
+	font-size: 1.5rem;
+}
+
+/* STYLE WORKS */
+.content .showcase {
+	background: var(--main);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	padding-bottom: 190px;
+}
+.content .showcase .right {
+	margin-left: 60px;
+	max-width: 525px;
+}
+.content .showcase .right h2 {
+	margin: 35px 0 25px;
+	font-size: 4rem;
+	max-width: 400px;
+}
+.content .showcase .right .paragraph > * {
+	font-size: 1.5rem;
+	margin: 0 25px 20px 0;
+}
+.content .showcase .right .works {
+	font-size: 1.5rem;
+	position: relative;
+	display: flex;
+	width: fit-content;
+	padding-bottom: 5px;
+	border-bottom: 1px solid;
+	color: var(--cta_cyan);
+	user-select: none;
+}
+.content .showcase .right .works:hover {
+	color: white;
+	filter: brightness(500%);
+	cursor: pointer;
+}
+.content .showcase .right .works span {
+	margin-right: 22.5px;
+}
+.content .showcase .right .works svg {
+	position: absolute;
+	top: 5px;
+	right: 0;
+}
+
+/* STYLE QUOTES */
+.content .recommendations {
+	background: var(--main);
+	display: flex;
+	flex-wrap: wrap;
+	gap: 37.5px;
+	padding: 0 150px 350px;
+	justify-content: center;
+}
+.content .recommendations .container {
+	position: relative;
+	flex: 1 0 350px;
+}
+.content .recommendations .container > img {
+	position: absolute;
+	top: -35px;
+	left: -7.5px;
+}
+.content .recommendations .container .card {
+	position: relative;
+	border-radius: 5px;
+	box-shadow: rgba(255, 255, 255, 0.0175) 7.5px 7.5px 0;
+	background-color: var(--quotes);
+	color: white;
+	z-index: 2;
+	padding: 45px 27.5px 25px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.content .recommendations .container .card p {
+	font-size: 1.25rem;
+	letter-spacing: 1px;
+	text-align: justify;
+}
+.content .recommendations .container .card .person {
+	display: flex;
+	margin-top: 30px;
+	align-items: center;
+	align-self: flex-start;
+}
+.content .recommendations .container .card .person .details {
+	display: flex;
+	flex-direction: column;
+}
+.content .recommendations .container .card .person .details span {
+	font-size: 1rem;
+}
+.content .recommendations .container .card .person .details span:first-child {
+	font-weight: 700;
+}
+.content .recommendations .container .card .person img {
+	height: 25px;
+	margin-right: 10px;
+	border-radius: 100%;
+}
+
+/* STYLE MAIL BOX */
+.mail_reg {
+	background: var(--main);
+	height: 0;
+}
+.mail_reg .container {
+	position: relative;
+	top: -160px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-areas:
+		'text text text'
+		'form form form';
+	background-color: var(--header_intro);
+	border-radius: 7.5px;
+	max-width: 860px;
+	margin: auto;
+	padding: 50px 75px 20px;
+	box-shadow: rgba(0, 0, 0, 0.25) 7.5px 7.5px 0;
+}
+.mail_reg .container .text {
+	grid-area: text;
+	color: white;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.mail_reg .container .text h2 {
+	font-size: 3.45rem;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.mail_reg .container .text p {
+	font-size: 1.5rem;
+}
+.mail_reg .container form {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-areas: 'input input btn';
+	grid-area: form;
+	gap: 0 30px;
+}
+.mail_reg .container form input {
+	border-style: none;
+	border-radius: 50px;
+	padding: 0 40px;
+	outline: 0;
+	grid-area: input;
+}
+.mail_reg .container form input::placeholder {
+	color: lightgray;
+}
+.mail_reg .container form input:focus::placeholder {
+	opacity: 0;
+}
+.mail_reg .container form button {
+	font-size: 1.5rem;
+	padding: 15px 35px;
+	grid-area: btn;
+}
+.mail_reg .container form .error {
+	visibility: hidden;
+	color: var(--error);
+	padding: 5px 0 0 40px;
+}
+.mail_reg .container form input:not(:focus):invalid {
+	border: 2px solid var(--error);
+}
+.mail_reg .container form input:not(:focus):invalid ~ .error {
+	visibility: visible;
+}
+.mail_reg .container form input:not(:focus):not(:placeholder-shown):valid {
+	border: 2px solid var(--cta_cyan);
+}
+
+/* STYLE FOOTER */
+.footer {
+	padding: 200px 80px 100px;
+	background-color: var(--footer);
+	display: grid;
+	grid-template-columns: 32.5% 25% 32.5% 10%;
+	grid-template-areas:
+		'logo logo logo logo'
+		'address contact footer_nav social';
+}
+.footer > img {
+	grid-area: logo;
+	margin-bottom: 40px;
+	user-select: none;
+}
+.footer .address {
+	grid-area: address;
+	display: flex;
+	align-items: flex-start;
+	color: white;
+	font-size: 1.5rem;
+	margin-right: 50px;
+}
+.footer .address img {
+	margin-right: 30px;
+	margin-top: 7.5px;
+	user-select: none;
+}
+.footer .contact {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+}
+.footer .contact .container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	color: white;
+	font-size: 1.5rem;
+	gap: 15px;
+}
+.footer .contact .container img {
+	margin-right: 25px;
+	user-select: none;
+}
+.footer .contact .container > div {
+	display: flex;
+	align-items: center;
+}
+.footer nav {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	margin-left: 25px;
+	gap: 75px;
+}
+.footer nav ul {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	font-size: 1.5rem;
+	row-gap: 10px;
+	width: 110px;
+}
+.footer nav ul * {
+	user-select: none;
+	text-decoration: none;
+	color: white;
+}
+.footer nav ul li a {
+	font-weight: 400;
+}
+.footer nav ul li a:hover {
+	font-weight: 700;
+}
+.footer nav ul li .btp {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	width: 125px;
+}
+.footer .social {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 10px;
+}
+/* by -> TeusDev */
