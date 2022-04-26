@@ -36,6 +36,7 @@
 	border-radius: 50%;
 	background-color: white;
 	padding: 1px;
+	transition: 0.3s;
 }
 .inCircle {
 	border-radius: 50%;
@@ -47,6 +48,7 @@
 	color: white;
 	position: absolute;
 	transform: translate(-50%, -50%);
+	transition: 0.3s;
 }
 .social a:hover {
 	background-color: var(--cta_cyan);

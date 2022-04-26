@@ -13,6 +13,7 @@ html {
 	margin: auto;
 	font-size: 62.5%;
 	font-family: 'Open Sans', sans-serif;
+	scroll-behavior: smooth;
 }
 
 .heading {
@@ -275,6 +276,7 @@ button:hover {
 	padding: 0 40px;
 	outline: 0;
 	grid-area: input;
+	border: 2px solid transparent;
 }
 .mail_reg .container form input::placeholder {
 	color: lightgray;
@@ -326,36 +328,34 @@ button:hover {
 	margin-right: 50px;
 }
 .footer .address img {
-	margin-right: 30px;
+	margin-right: 20px;
 	margin-top: 7.5px;
 	user-select: none;
 }
 .footer .contact {
 	display: flex;
-	align-items: flex-start;
 	justify-content: center;
 }
 .footer .contact .container {
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
 	color: white;
 	font-size: 1.5rem;
 	gap: 15px;
 }
+
 .footer .contact .container img {
-	margin-right: 25px;
 	user-select: none;
 }
 .footer .contact .container > div {
 	display: flex;
 	align-items: center;
+	gap: 20px;
 }
 .footer nav {
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
-	margin-left: 25px;
 	gap: 75px;
 }
 .footer nav ul {
@@ -373,6 +373,7 @@ button:hover {
 }
 .footer nav ul li a {
 	font-weight: 400;
+	cursor: pointer;
 }
 .footer nav ul li a:hover {
 	font-weight: 700;
