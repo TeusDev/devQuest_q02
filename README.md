@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Screenshot
 
-<img src="screenshot_desktop.png" alt="dekstop screenshot" width="600"/>
-<img src="screenshot_mobile.png" alt="mobile screenshot" width="119.75"/>
+<img src="screenshot_desktop.png" alt="dekstop screenshot" width="400"/>
+<img src="screenshot_mobile.png" alt="mobile screenshot" width="79.85"/>
 
 ### Links
 
